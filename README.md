@@ -1,38 +1,39 @@
-# llm-fireworks
+# llm-deepseek
 
-[![PyPI](https://img.shields.io/pypi/v/llm-fireworks.svg)](https://pypi.org/project/llm-fireworks/)
-[![Changelog](https://img.shields.io/github/v/release/simonw/llm-fireworks?include_prereleases&label=changelog)](https://github.com/simonw/llm-fireworks/releases)
-[![Tests](https://github.com/simonw/llm-fireworks/actions/workflows/test.yml/badge.svg)](https://github.com/simonw/llm-fireworks/actions/workflows/test.yml)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/llm-fireworks/blob/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/llm-deepseek.svg)](https://pypi.org/project/llm-deepseek/)
+[![Changelog](https://img.shields.io/github/v/release/abrasumente233/llm-deepseek?include_prereleases&label=changelog)](https://github.com/abrasumente233/llm-deepseek/releases)
+[![Tests](https://github.com/abrasumente233/llm-deepseek/actions/workflows/test.yml/badge.svg)](https://github.com/abrasumente233/llm-deepseek/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/abrasumente233/llm-deepseek/blob/main/LICENSE)
 
-Access [fireworks.ai](https://fireworks.ai/) models via API
+Access [deepseek.com](https://deepseek.com/) models via API
 
 ## Installation
 
 Install this plugin in the same environment as [LLM](https://llm.datasette.io/).
 ```bash
-llm install llm-fireworks
+llm install llm-deepseek
 ```
 ## Usage
 
-Obtain a [Fireworks API key](https://fireworks.ai/api-keys) and save it like this:
+Obtain a [DeepSeek API key](https://platform.deepseek.com/api_keys) and save it like this:
 
 ```bash
-llm keys set fireworks
+llm keys set deepseek
 # <Paste key here>
 ```
 Run `llm models` to get a list of models.
 
 Run prompts like this:
 ```bash
-llm -m fireworks/models/llama-v3-70b-instruct 'five great names for a pet ocelot'
+llm -m deepseek-chat 'five great names for a pet ocelot'
+llm -m deepseek-coder 'how to reverse a linked list in python'
 ```
 
 ## Development
 
 To set up this plugin locally, first checkout the code. Then create a new virtual environment:
 ```bash
-cd llm-fireworks
+cd llm-deepseek
 python3 -m venv venv
 source venv/bin/activate
 ```

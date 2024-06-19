@@ -1,9 +1,9 @@
 [project]
-name = "llm-fireworks"
+name = "llm-deepseek"
 version = "0.1a0"
-description = "Access fireworks.ai models via API"
+description = "Access deepseek.com models via API"
 readme = "README.md"
-authors = [{name = "Simon Willison"}]
+authors = [{name = "abrasumente"}]
 license = {text = "Apache-2.0"}
 classifiers = [
     "License :: OSI Approved :: Apache Software License"
@@ -13,13 +13,13 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/simonw/llm-fireworks"
-Changelog = "https://github.com/simonw/llm-fireworks/releases"
-Issues = "https://github.com/simonw/llm-fireworks/issues"
-CI = "https://github.com/simonw/llm-fireworks/actions"
+Homepage = "https://github.com/abrasumente233/llm-deepseek"
+Changelog = "https://github.com/abrasumente233/llm-deepseek/releases"
+Issues = "https://github.com/abrasumente233/llm-deepseek/issues"
+CI = "https://github.com/abrasumente233/llm-deepseek/actions"
 
 [project.entry-points.llm]
-fireworks = "llm_fireworks"
+deepseek = "llm_deepseek"
 
 [project.optional-dependencies]
 test = ["pytest"]
