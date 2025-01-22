@@ -4,6 +4,7 @@ from llm.default_plugins.openai_models import Chat
 MODELS = (
     "deepseek-chat",
     "deepseek-coder",
+    "deepseek-reasoner",
 )
 
 
