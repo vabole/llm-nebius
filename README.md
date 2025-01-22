@@ -26,6 +26,7 @@ Run `llm models` to get a list of models.
 Run prompts like this:
 ```bash
 llm -m deepseek-chat 'five great names for a pet ocelot'
+llm -m deepseek-reasoner 'solve \\int \\frac{\\ln(x)\\arctan(x)}{x^2+1} dx'
 llm -m deepseek-coder 'how to reverse a linked list in python'
 ```
 
