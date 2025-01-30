@@ -1,25 +1,8 @@
 [project]
-name = "llm-deepseek"
-version = "0.1.4"
-description = "Access deepseek.com models via API"
-readme = "README.md"
-authors = [{name = "abrasumente"}]
-license = {text = "Apache-2.0"}
-classifiers = [
-    "License :: OSI Approved :: Apache Software License"
-]
-dependencies = [
-    "llm"
-]
-
-[project.urls]
-Homepage = "https://github.com/abrasumente233/llm-deepseek"
-Changelog = "https://github.com/abrasumente233/llm-deepseek/releases"
-Issues = "https://github.com/abrasumente233/llm-deepseek/issues"
-CI = "https://github.com/abrasumente233/llm-deepseek/actions"
+name = "llm-r1"
+version = "0.1"
+description = "A plugin for LLM adding the Nebius R1 model"
+requires-python = ">=3.9"
 
 [project.entry-points.llm]
-deepseek = "llm_deepseek"
-
-[project.optional-dependencies]
-test = ["pytest"]
+r1 = "llm_r1"
